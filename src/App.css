@@ -13,6 +13,6 @@
 .app-wrapper p:first-child {
   margin: 12px;
   font-size: 20px;
-  z-index: 99;
+  z-index: 99 !important;
   color: #fff;
 }
