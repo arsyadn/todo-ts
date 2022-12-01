@@ -1,0 +1,51 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.input-task {
+  border-radius: 50px;
+  height: 30px;
+  width: 300px;
+  padding: 5px 20px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: 0 5px 10px #4b4e3c;
+  z-index: 0;
+  position: static;
+  color: darkslategrey;
+}
+
+.input-task:focus {
+  box-shadow: 10px 10px 0 2000px #a9af7e;
+  outline: none;
+}
+
+.btn-go {
+  background-color: #a9af7e;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  color: #fff;
+  font-size: 11px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  position: absolute;
+  right: 8px;
+}
+.btn-go:hover {
+  color: #dadfba;
+  background-color: #7d8f69;
+}
+.btn-go:active {
+  transform: scale(0.5);
+}
