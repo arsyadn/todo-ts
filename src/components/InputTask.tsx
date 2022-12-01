@@ -4,11 +4,12 @@ import "./styles.css";
 interface Props {
   list: string;
   setList: React.Dispatch<React.SetStateAction<string>>;
+  handleAdd: (e: React.FormEvent<EventTarget>) => void;
 }
-const InputTask: React.FC<Props> = ({ list, setList }) => {
+const InputTask: React.FC<Props> = ({ list, setList, handleAdd }) => {
   return (
     <div className="input-container">
-      <div className="input-wrapper">
+      <form className="input-wrapper" onSubmit={handleAdd}>
         <input
           type="text"
           placeholder="Enter a task"
@@ -16,8 +17,10 @@ const InputTask: React.FC<Props> = ({ list, setList }) => {
           value={list}
           onChange={(e) => setList(e.target.value)}
         />
-        <button className="btn-go">GO</button>
-      </div>
+        <button className="btn-go" type="submit">
+          GO
+        </button>
+      </form>
     </div>
   );
 };

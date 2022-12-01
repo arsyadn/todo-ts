@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   width: fit-content;
+  margin-bottom: 30px;
 }
 
 .input-task {
@@ -18,7 +19,6 @@
   border: none;
   transition: 0.2s;
   box-shadow: 0 5px 10px #4b4e3c;
-  z-index: 0;
   position: static;
   color: darkslategrey;
 }
@@ -26,6 +26,7 @@
 .input-task:focus {
   box-shadow: 10px 10px 0 2000px #a9af7e;
   outline: none;
+  z-index: 0;
 }
 
 .btn-go {
